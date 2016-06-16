@@ -1,0 +1,14 @@
+#!/bin/sh
+
+export JAVA_VERSION=1.7.0
+
+# Where will Java look for classes? 
+export CLASSPATH=\
+/../libs/edu-mines-jtk-1.0.0.jar:\
+.
+
+# Run a server 64-bit VM with assertions enabled and a 10GB max Java heap.
+# Modify these flags and properties as necessary for your system.
+java -server -d64 -ea -Xmx10g \
+-Djava.util.logging.config.file=$HOME/.java_logging_config \
+$*

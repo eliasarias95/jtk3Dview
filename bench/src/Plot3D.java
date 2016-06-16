@@ -1,5 +1,3 @@
-package util;
-
 import edu.mines.jtk.mosaic.*;
 import edu.mines.jtk.awt.ColorMap;
 import edu.mines.jtk.dsp.*;
@@ -11,10 +9,10 @@ import java.awt.Color;
 import javax.swing.*;
 
 /**
- * Plotting class to hold various plot methods.
+ * Plot method to display a slice view of a 3D volume.
  * @author Elias Arias, Colorado School of Mines, CWP
  * @author Alicia Johnson, Colorado School of Mines, CWP
- * @version 25.05.2016
+ * @version 16.06.2016
  */
 public class Plot3D {
 
@@ -28,10 +26,9 @@ public class Plot3D {
     int n2 = s2.getCount();
     int n3 = s3.getCount();
     SimpleFrame sf = new SimpleFrame(AxesOrientation.XRIGHT_YIN_ZDOWN);
-    ImagePanelGroup ipg = new ImagePanelGroup2(s1,s2,s3,f);
+    ImagePanelGroup ipg = new ImagePanelGroup(s1,s2,s3,f);
     //ipg.setClips1(-50,50);
-    ipg.setClips2(cmin,cmax);
-    ipg.setColorModel2(ColorMap.setAlpha(ColorMap.JET,0.0));
+    ipg.setClips(cmin,cmax);
     sf.getWorld().addChild(ipg);
     sf.setSize(985,700);   // for sch data
     ViewCanvas vc = sf.getViewCanvas();
