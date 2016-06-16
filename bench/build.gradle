@@ -25,6 +25,5 @@ jar {
 
 repositories.mavenCentral() // for Scala jars
 dependencies {
-  compile fileTree('../../jtk/core/build/libs') // for edu-mines-jtk-1.0.0.jar
-  compile fileTree('../../jtk/core/build/deps') // for dependency jars
+  compile fileTree('../libs') // for edu-mines-jtk-1.0.0.jar
 }
