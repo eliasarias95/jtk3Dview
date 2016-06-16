@@ -1,0 +1,53 @@
+1.8-svn	DT1toRSF.py	alijohns/walesGPR/Cube:	alijohns@Alicias-MacBook-Pro.local	Thu Jun 16 12:27:31 2016
+
+	d2=1
+	n2=734
+	o1=0
+	o2=1
+	data_format="native_float"
+	esize=4
+	in="/SCRATCH/alijohns/walesGPR/Cube/Line01.rsf@"
+	d1=1
+	n1=500
+1.8-svn	sfreverse	alijohns/walesGPR/Cube:	alijohns@Alicias-MacBook-Pro.local	Thu Jun 16 12:27:31 2016
+
+	data_format="native_float"
+	esize=4
+	in="stdout"
+	in="stdin"
+
+1.8-svn	sfwindow	alijohns/walesGPR/Cube:	alijohns@Alicias-MacBook-Pro.local	Thu Jun 16 12:27:31 2016
+
+	d2=1
+	o1=0
+	n2=730
+	o2=1
+	data_format="native_float"
+	esize=4
+	in="/SCRATCH/alijohns/walesGPR/Cube/WindowLine01.rsf@"
+	d1=1
+	n1=500
+1.8-svn	sfcat	alijohns/walesGPR/Cube:	alijohns@Alicias-MacBook-Pro.local	Thu Jun 16 12:27:43 2016
+
+	n3=33
+	data_format="native_float"
+	esize=4
+	in="stdout"
+	in="stdin"
+
+1.8-svn	sfput	alijohns/walesGPR/Cube:	alijohns@Alicias-MacBook-Pro.local	Thu Jun 16 12:27:43 2016
+
+	label3=y
+	unit1=ns
+	unit2=m
+	unit3=m
+	d1=0.8
+	d2=0.1
+	d3=1
+	o1=0
+	data_format="native_float"
+	o2=0
+	o3=0
+	in="/SCRATCH/alijohns/walesGPR/Cube/walesTraces.rsf@"
+	label1=t
+	label2=x
