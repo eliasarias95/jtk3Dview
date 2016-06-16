@@ -1,3 +1,5 @@
+package viewer;
+
 import edu.mines.jtk.mosaic.*;
 import edu.mines.jtk.awt.ColorMap;
 import edu.mines.jtk.dsp.*;
@@ -28,7 +30,7 @@ public class Plot3D {
     SimpleFrame sf = new SimpleFrame(AxesOrientation.XRIGHT_YIN_ZDOWN);
     ImagePanelGroup ipg = new ImagePanelGroup(s1,s2,s3,f);
     //ipg.setClips1(-50,50);
-    ipg.setClips(cmin,cmax);
+    //ipg.setClips(cmin,cmax);
     sf.getWorld().addChild(ipg);
     sf.setSize(985,700);   // for sch data
     ViewCanvas vc = sf.getViewCanvas();

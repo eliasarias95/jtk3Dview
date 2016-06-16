@@ -1,10 +1,11 @@
 #!/bin/sh
-
 export JAVA_VERSION=1.7.0
 
 # Where will Java look for classes? 
 export CLASSPATH=\
-/../libs/edu-mines-jtk-1.0.0.jar:\
+/Users/earias/home/git/jtk3Dview/bench/build/deps/*:\
+/Users/earias/home/git/jtk3Dview/bench/build/libs/jtk3Dview.jar:\
+/Users/earias/home/git/jtk3Dview/bench/build/classes:\
 .
 
 # Run a server 64-bit VM with assertions enabled and a 10GB max Java heap.
